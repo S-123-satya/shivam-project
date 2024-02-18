@@ -1,0 +1,1 @@
+# npm i express cors mongoose jsonwebtoken express-validator dotenv cookie-parser bcrypt
