@@ -14,14 +14,6 @@ function parseJwt(token) {
 const user = parseJwt(token);
 console.log(user);
 
-let counter = 0;
-
-const socket = io({
-  ackTimeout: 10000,
-  auth: {
-    serverOffset: 0,
-  },
-});
 
 const form = document.getElementById("form");
 const input = document.getElementById("input");
