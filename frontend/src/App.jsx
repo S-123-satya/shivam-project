@@ -1,15 +1,26 @@
-import { useState } from "react";
-// import './App.css'
-import Registration from "./components/Registration/Registration";
+import NavigationBar from "./components/NavigationBar/NavigationBar"
+import WelcomeSection from './components/WelcomeSection/WelcomeSection'
+import AboutSection from './components/AboutSection/AboutSection'
+import ServicesSection from './components/ServicesSection/ServicesSection'
+import ChooseUsSection from './components/ChooseUsSection/ChooseUsSection'
+import ReviewsSection from './components/ReviewsSection/ReviewsSection'
+import DownloadSection from './components/DownloadSection/DownloadSection'
+import Footer from "./components/Footer/Footer"
+import './index.css'
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <Registration />
-    </>
-  );
+    <div className="App">
+      <NavigationBar/>
+      <WelcomeSection/>
+      <AboutSection/>
+      <ServicesSection/>
+      <ChooseUsSection/>
+      <ReviewsSection/>
+      {/* <DownloadSection/> */}
+      <Footer/>
+    </div>
+  )
 }
 
-export default App;
+export default App
